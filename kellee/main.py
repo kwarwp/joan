@@ -23,10 +23,10 @@ E_SUL = "https://i.imgur.com/ZBsXQk7.jpg"
 F_NORTE = "https://i.imgur.com/2mrITem.jpg"
 F_OESTE = "https://i.imgur.com/CPc3fGM.jpg"
 F_SUL = "https://i.imgur.com/VGmsnAq.jpg"
-G_NORTE = "https://i.imgur.com/DHfcJaf.jpg"
-G_LESTE = "https://i.imgur.com/DKp1uPB.jpg"
+G_NORTE = "https://i.imgur.com/DKp1uPB.jpg"
+G_LESTE = "https://i.imgur.com/DHfcJaf.jpg"
 G_OESTE = "https://i.imgur.com/doUqtLz.jpg"
-G_SUL = "https://i.imgur.com/8DbF9Nc.jpg "
+G_SUL = "https://i.imgur.com/8DbF9Nc.jpg"
 
 def criarsalas():
  a_norte = Cena(img=A_NORTE)
@@ -66,6 +66,7 @@ def criarsalas():
  a_oeste.esquerda = a_sul
  a_sul.direita = a_oeste
  a_sul.esquerda = a_leste
+ 
  b_norte.direita = b_leste
  b_norte.esquerda = b_oeste
  b_norte.meio = c_norte
@@ -75,6 +76,7 @@ def criarsalas():
  b_oeste.esquerda = b_sul
  b_sul.direita = b_oeste
  b_sul.esquerda = b_leste
+ b_sul.meio = a_norte
  c_norte.direita = c_leste
  c_norte.esquerda = c_oeste
  c_norte.meio = d_norte
@@ -93,6 +95,7 @@ def criarsalas():
  d_oeste.meio = e_norte
  d_sul.direita = d_oeste
  d_sul.esquerda = d_leste
+ d_sul.meio = c_norte
  e_norte.direita = e_sul
  e_norte.esquerda = e_leste
  e_leste.esquerda = e_sul
@@ -103,6 +106,7 @@ def criarsalas():
  e_lestea.meio = f_norte
  e_sul.direita = e_leste
  e_sul.esquerda = e_norte
+ e_sul.meio = d_norte
  f_norte.direita = f_sul
  f_norte.esquerda = f_oeste
  f_oeste.direita = f_norte
@@ -110,13 +114,14 @@ def criarsalas():
  f_oeste.meio = g_norte
  f_sul.direita = f_oeste
  f_sul.esquerda = f_norte
+ f_sul.meio = e_norte
  g_norte.direita = g_leste
- g_norte.esquerda = g_oeste
+ g_norte.esquerda = g_sul
+ g_norte.meio = g_oeste
  g_leste.esquerda = g_norte
  g_leste.direita = g_sul
- g_oeste.direita = g_norte
- g_oeste.esquerda = g_sul
- g_sul.direita = g_oeste
+ g_oeste.meio = g_norte
+ g_sul.direita = g_norte
  g_sul.esquerda = g_leste
  a_norte.vai()
  
