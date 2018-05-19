@@ -1,4 +1,4 @@
-from _spy.vitollino.main import Cena
+from _spy.vitollino.main import Cena, Texto, Elemento
 
 A_NORTE = "https://i.imgur.com/lLB3EFx.jpg"
 A_LESTE = "https://i.imgur.com/ymN6qmh.jpg"
@@ -73,6 +73,18 @@ def criarsalas():
  g_sul = Cena(img=G_SUL)
  g_leste = Cena(img=G_LESTE)
  g_secreto = Cena(img=G_SECRETO)
+ 
+ edi = Elemento(img = EDI, style = dict(top = 100,left = 122, height = 100, width = 250))
+ ed = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
+ guarda = Elemento(img = GUARDA, style = dict(top = 100,left = 122, height = 100, width = 250))
+ 
+ edi.entra(a_norte)
+ txtedi = Texto(a_norte, "Bem Vindos a UFRJ!")
+ edi.vai = txtedi.vai
+ 
+ ed.entra(a_leste)
+ ed.entra(a_sul)
+ 
  
  a_norte.direita = a_leste
  a_norte.esquerda = a_oeste
