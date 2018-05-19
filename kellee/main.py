@@ -7,6 +7,7 @@ A_SUL = "https://i.imgur.com/jHB3DgA.jpg"
 
 B_NORTE = "https://i.imgur.com/5gsI06u.jpg"
 B_LESTE = "https://i.imgur.com/Ud9wEDw.jpg"
+B_LESTEA = "https://i.imgur.com/uckORU4.jpg"
 B_OESTE = "https://i.imgur.com/JNIjEgd.jpg"
 B_SUL = "https://i.imgur.com/8uZrXeI.jpg"
 
@@ -48,6 +49,7 @@ def criarsalas():
  b_norte = Cena(img=B_NORTE)
  b_sul = Cena(img=B_SUL)
  b_leste = Cena(img=B_LESTE)
+ b_lestea = Cena(B_LESTEA)
  b_oeste = Cena(img=B_OESTE)
  
  c_norte = Cena(img=C_NORTE)
@@ -76,6 +78,11 @@ def criarsalas():
  
  edi = Elemento(img = EDI, style = dict(top = 100,left = 122, height = 100, width = 250))
  ed = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
+ ed1 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
+ ed2 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
+ ed3 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
+ ed4 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
+ ed5 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
  guarda = Elemento(img = GUARDA, style = dict(top = 100,left = 122, height = 100, width = 250))
  
  edi.entra(a_norte)
@@ -83,8 +90,28 @@ def criarsalas():
  edi.vai = txtedi.vai
  
  ed.entra(a_leste)
- ed.entra(a_sul)
+ txted = Texto(a_leste, "Aqui é a saída, não vamos embora agora, vamos ao curso!")
+ ed.vai = txted.vai
  
+ ed1.entra(b_norte)
+ txted1 = Texto(b_norte, "Aqui é a entrada, para passarmos da catraca precisamos falar com o guarda a sua direita.")
+ ed1.vai = txted1.vai
+ 
+ ed2.entra(b_leste)
+ txted2 = Texto(b_leste, "Vá até o atendimento para falar com o guarda, ele lhe dará as o que é necessário pra passar pela catraca.")
+ ed2.vai = txted2.vai
+ 
+ ed3.entra(c_norte)
+ txted3 = Texto(c_norte, "Agora que passamos da catraca é só seguir o corredor e virar a esquerda.")
+ ed3.vai = txted3.vai
+ 
+ ed4.entra(d_oeste)
+ txted4 = Texto(d_oeste, "Logo mais a frente haverá uma porta a sua esquerda, entre nela.")
+ ed4.vai = txted4.vai
+ 
+ guarda.entra(b_lestea)
+ txtguarda = Texto(b_lestea, "Bom dia, você é do curso de programação não é? pode passar pela catraca.")
+ guarda.vai = txtguarda.vai
  
  a_norte.direita = a_leste
  a_norte.esquerda = a_oeste
@@ -101,6 +128,9 @@ def criarsalas():
  b_norte.meio = c_norte
  b_leste.esquerda = b_norte
  b_leste.direita = b_sul
+ b_lestea.esquerda = b_norte
+ b_lestea.direita = b_sul
+ b_leste.meio = b_lestea
  b_oeste.direita = b_norte
  b_oeste.esquerda = b_sul
  b_sul.direita = b_oeste
@@ -157,6 +187,7 @@ def criarsalas():
  g_leste.direita = g_sul
  g_secreto.meio = g_norte
  g_sul.direita = g_norte
+ g_leste.meio = f_oeste
  g_sul.esquerda = g_leste
  
  a_norte.vai()
