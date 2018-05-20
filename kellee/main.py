@@ -123,7 +123,7 @@ def criarsalas():
  ed2.vai = txted2.vai
  
  ed3.entra(c_norte)
- txted3 = Texto(c_norte, "Agora que passamos da catraca é vamos ver esse mundo magico da CCMN.")
+ txted3 = Texto(c_norte, "Agora que passamos da catraca, vamos ver esse mundo magico da CCMN.")
  ed3.vai = txted3.vai
  
  ed4.entra(d_oeste)
@@ -131,7 +131,7 @@ def criarsalas():
  ed4.vai = txted4.vai
  
  ed5.entra(f_norte)
- txted5 = Texto(f_norte, "Esse é o corredor q leva a nossa sala de aula, vire as proximas duas esquerdas e chegaremos a nossa sala.")
+ txted5 = Texto(f_norte, "Esse é o corredor que leva a nossa sala de aula, vire as proximas duas esquerdas e chegaremos a nossa sala.")
  ed5.vai = txted5.vai
  
  ed6.entra(a_oeste)
