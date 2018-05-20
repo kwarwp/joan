@@ -37,7 +37,7 @@ G_SUL = "https://i.imgur.com/8DbF9Nc.jpg"
 
 ED = "https://i.imgur.com/FWKz9Ol.png"
 EDI = "https://i.imgur.com/hIcRUrM.png"
-GUARDA = "https://i.imgur.com/WReBA4R.png"
+GUARDA = "https://i.imgur.com/t3WIdOq.jpg"
 
 def criarsalas():
  
@@ -107,19 +107,19 @@ def criarsalas():
  guarda = Elemento(img = GUARDA, style = dict(top = 100,left = 122, height = 100, width = 250))
  
  edi.entra(a_norte)
- txtedi = Texto(a_norte, "Bem Vindo, caro visitante, nesse jogo você irá conhecer um pouco da UFRJ, a CCMN!")
+ txtedi = Texto(a_norte, "Bem Vindo, caro visitante, nesse jogo vocÃª irÃ¡ conhecer um pouco da UFRJ, a CCMN!")
  edi.vai = txtedi.vai
  
  ed.entra(a_leste)
- txted = Texto(a_leste, "Aqui é a saída, não vamos embora agora, vamos a visita!")
+ txted = Texto(a_leste, "Aqui Ã© a saÃ­da, nÃ£o vamos embora agora, vamos a visita!")
  ed.vai = txted.vai
  
  ed1.entra(b_norte)
- txted1 = Texto(b_norte, "Aqui é a entrada, para passarmos da catraca precisamos falar com o guarda a sua direita.")
+ txted1 = Texto(b_norte, "Aqui Ã© a entrada, para passarmos da catraca precisamos falar com o guarda a sua direita.")
  ed1.vai = txted1.vai
  
  ed2.entra(b_leste)
- txted2 = Texto(b_leste, "Vá até o atendimento para falar com o guarda, ele lhe dará as o que é necessário pra passar pela catraca.")
+ txted2 = Texto(b_leste, "VÃ¡ atÃ© o atendimento para falar com o guarda, ele lhe darÃ¡ as o que Ã© necessÃ¡rio pra passar pela catraca.")
  ed2.vai = txted2.vai
  
  ed3.entra(c_norte)
@@ -127,11 +127,11 @@ def criarsalas():
  ed3.vai = txted3.vai
  
  ed4.entra(d_oeste)
- txted4 = Texto(d_oeste, "Logo mais a frente haverá uma porta a sua esquerda, entre nela.")
+ txted4 = Texto(d_oeste, "Logo mais a frente haverÃ¡ uma porta a sua esquerda, entre nela.")
  ed4.vai = txted4.vai
  
  ed5.entra(f_norte)
- txted5 = Texto(f_norte, "Esse é o corredor que leva a nossa sala de aula, vire as proximas duas esquerdas e chegaremos a nossa sala.")
+ txted5 = Texto(f_norte, "Esse Ã© o corredor que leva a nossa sala de aula, vire as proximas duas esquerdas e chegaremos a nossa sala.")
  ed5.vai = txted5.vai
  
  ed6.entra(a_oeste)
@@ -143,7 +143,7 @@ def criarsalas():
  ed12.entra(c_oeste)
  
  ed13.entra(d_norte)
- txted13 = Texto(d_norte, "O CCMN foi fundado em 1967 por Tércio Pacitti!")
+ txted13 = Texto(d_norte, "O CCMN foi fundado em 1967 por TÃ©rcio Pacitti!")
  ed13.vai = txted13.vai
  
  ed14.entra(d_sul)
@@ -160,18 +160,18 @@ def criarsalas():
  ed22.entra(f_oeste)
  
  ed23.entra(g_norte)
- txted23 = Texto(g_norte, "Essa é a sala que normalmente ficamos, onde a magia ocorre!")
+ txted23 = Texto(g_norte, "Essa Ã© a sala que normalmente ficamos, onde a magia ocorre!")
  ed23.vai = txted23.vai
  
  ed24.entra(g_leste)
  ed25.entra(g_sul)
  
  ed26.entra(g_secreto)
- txted26 = Texto(g_secreto, "Essa é parte da atual turma desse curso de programação!")
+ txted26 = Texto(g_secreto, "Essa Ã© parte da atual turma desse curso de programaÃ§Ã£o!")
  ed26.vai = txted26.vai
  
  guarda.entra(b_lestea)
- txtguarda = Texto(b_lestea, "Bom dia, você é do curso de programação não é? pode passar pela catraca.")
+ txtguarda = Texto(b_lestea, "Bom dia, vocÃª Ã© do curso de programaÃ§Ã£o nÃ£o Ã©? Tome o cartão de acesso e passe pela catraca.")
  guarda.vai = txtguarda.vai
  
  a_norte.direita = a_leste
