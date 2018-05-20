@@ -89,7 +89,7 @@ def criarsalas():
  ed9 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
  ed10 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
  ed11 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed12 = Elemento(img = EDI, style = dict(top = 100,left = 122, height = 100, width = 250))
+ ed12 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
  ed13 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
  ed14 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
  ed15 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
@@ -103,15 +103,15 @@ def criarsalas():
  ed23 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
  ed24 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
  ed25 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed26 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
+ ed26 = Elemento(img = EDI, style = dict(top = 100,left = 122, height = 100, width = 250))
  guarda = Elemento(img = GUARDA, style = dict(top = 100,left = 122, height = 100, width = 250))
  
  edi.entra(a_norte)
- txtedi = Texto(a_norte, "Bem Vindos a UFRJ!")
+ txtedi = Texto(a_norte, "Bem Vindo, caro visitante, nesse jogo você irá conhecer um pouco da UFRJ, a CCMN!")
  edi.vai = txtedi.vai
  
  ed.entra(a_leste)
- txted = Texto(a_leste, "Aqui é a saída, não vamos embora agora, vamos ao curso!")
+ txted = Texto(a_leste, "Aqui é a saída, não vamos embora agora, vamos a visita!")
  ed.vai = txted.vai
  
  ed1.entra(b_norte)
@@ -123,7 +123,7 @@ def criarsalas():
  ed2.vai = txted2.vai
  
  ed3.entra(c_norte)
- txted3 = Texto(c_norte, "Agora que passamos da catraca é só seguir o corredor e virar a esquerda.")
+ txted3 = Texto(c_norte, "Agora que passamos da catraca é vamos ver esse mundo magico da CCMN.")
  ed3.vai = txted3.vai
  
  ed4.entra(d_oeste)
@@ -141,19 +141,34 @@ def criarsalas():
  ed10.entra(c_leste)
  ed11.entra(c_sul)
  ed12.entra(c_oeste)
+ 
  ed13.entra(d_norte)
+ txted13 = Texto(d_norte, "O CCMN foi fundado em 1967 por Tércio Pacitti!")
+ ed13.vai = txted13.vai
+ 
  ed14.entra(d_sul)
  ed15.entra(d_leste)
+ 
  ed16.entra(e_norte)
+ txted16 = Texto(e_norte, "Esse curso nos ensina a programar jogos no python e nos auxilia a raciocinar mais sobre tudo!" )
+ ed16.vai = txted16.vai
+ 
  ed17.entra(e_leste)
  ed19.entra(e_lestea)
  ed20.entra(e_sul)
  ed21.entra(f_sul)
  ed22.entra(f_oeste)
+ 
  ed23.entra(g_norte)
+ txted23 = Texto(g_norte, "Essa é a sala que normalmente ficamos, onde a magia ocorre!")
+ ed23.vai = txted23.vai
+ 
  ed24.entra(g_leste)
  ed25.entra(g_sul)
+ 
  ed26.entra(g_secreto)
+ txted26 = Texto(g_secreto, "Essa é parte da atual turma desse curso de programação!")
+ ed26.vai = txted26.vai
  
  guarda.entra(b_lestea)
  txtguarda = Texto(b_lestea, "Bom dia, você é do curso de programação não é? pode passar pela catraca.")
