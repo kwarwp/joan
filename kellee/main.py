@@ -143,7 +143,7 @@ def criarsalas():
  ed12.entra(c_oeste)
  
  ed13.entra(d_norte)
- txted13 = Texto(d_norte, "O CCMN foi fundado em 1967 por TÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©rcio Pacitti!")
+ txted13 = Texto(d_norte, "O CCMN foi fundado em 1967 por Tercio Pacitti!")
  ed13.vai = txted13.vai
  
  ed14.entra(d_sul)
