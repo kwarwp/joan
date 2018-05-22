@@ -171,7 +171,7 @@ def criarsalas():
  ed26.vai = txted26.vai
  
  guarda.entra(b_lestea)
- txtguarda = Texto(b_lestea, "Bom dia, vocÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂª ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© do curso de programaÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ§ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£o nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£o ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©? Tome o cartÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£o de acesso e passe pela catraca.")
+ txtguarda = Texto(b_lestea, "Bom dia, voce precisa apresentar uma identificacao com foto, para ter acesso e passar pela catraca.")
  guarda.vai = txtguarda.vai
  
  a_norte.direita = a_leste
