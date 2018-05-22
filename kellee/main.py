@@ -1,4 +1,6 @@
-from _spy.vitollino.main import Cena, Texto, Elemento
+from _spy.vitollino.main import Cena, Texto, Elemento, STYLE
+STYLE['width'] = 1000
+STYLE['height'] = "800px"
 
 A_NORTE = "https://i.imgur.com/lLB3EFx.jpg"
 A_LESTE = "https://i.imgur.com/ymN6qmh.jpg"
@@ -76,34 +78,34 @@ def criarsalas():
  g_leste = Cena(img=G_LESTE)
  g_secreto = Cena(img=G_SECRETO)
  
- edi = Elemento(img = EDI, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed1 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed2 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed3 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed4 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed5 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed6 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed7 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed8 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed9 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed10 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed11 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed12 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed13 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed14 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed15 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed16 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed17 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed18 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed19 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed20 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed21 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed22 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed23 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed24 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed25 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 250))
- ed26 = Elemento(img = EDI, style = dict(top = 100,left = 122, height = 100, width = 250))
+ edi = Elemento(img = EDI, style = dict(top = 100,left = 122, height = '250px', width = 400))
+ ed = Elemento(img = ED, style = dict(top = 100,left = 122, height = '250px', width = 400))
+ ed1 = Elemento(img = ED, style = dict(top = 100,left = 122, height = '250px', width = 400))
+ ed2 = Elemento(img = ED, style = dict(top = 100,left = 122, height = '250px', width = 400))
+ ed3 = Elemento(img = ED, style = dict(top = 100,left = 122, height = '250px', width = 400))
+ ed4 = Elemento(img = ED, style = dict(top = 100,left = 122, height = '250px', width = 400))
+ ed5 = Elemento(img = ED, style = dict(top = 100,left = 122, height = '250px', width = 400))
+ ed6 = Elemento(img = ED, style = dict(top = 100,left = 122, height = '250px', width = 400))
+ ed7 = Elemento(img = ED, style = dict(top = 100,left = 122, height = '25, width = 400))
+ ed8 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed9 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed10 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed11 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed12 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed13 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed14 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed15 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed16 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed17 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed18 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed19 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed20 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed21 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed22 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed23 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed24 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed25 = Elemento(img = ED, style = dict(top = 100,left = 122, height = 100, width = 400))
+ ed26 = Elemento(img = EDI, style = dict(top = 100,left = 122, height = 100, width = 400))
  guarda = Elemento(img = GUARDA, style = dict(top = 100,left = 122, height = 100, width = 250))
  
  edi.entra(a_norte)
@@ -160,14 +162,14 @@ def criarsalas():
  ed22.entra(f_oeste)
  
  ed23.entra(g_norte)
- txted23 = Texto(g_norte, "Essa ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© a sala que normalmente ficamos, onde a magia ocorre!")
+ txted23 = Texto(g_norte, "Essa e a sala em que normalmente ficamos, onde a magia ocorre!")
  ed23.vai = txted23.vai
  
  ed24.entra(g_leste)
  ed25.entra(g_sul)
  
  ed26.entra(g_secreto)
- txted26 = Texto(g_secreto, "Essa ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© parte da atual turma desse curso de programaÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ§ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£o!")
+ txted26 = Texto(g_secreto, "Essa e parte atual da turma desse curso de programacao!")
  ed26.vai = txted26.vai
  
  guarda.entra(b_lestea)
