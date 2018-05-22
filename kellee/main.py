@@ -107,19 +107,19 @@ def criarsalas():
  guarda = Elemento(img = GUARDA, style = dict(top = 100,left = 122, height = 100, width = 250))
  
  edi.entra(a_norte)
- txtedi = Texto(a_norte, "Bem Vindo, caro visitante, nesse jogo voce vai conhecer um pouco da UFRJ, a CCMN!")
+ txtedi = Texto(a_norte, "Bem vindo, caro visitante, nesse jogo voce vai conhecer um pouco da UFRJ, a CCMN!")
  edi.vai = txtedi.vai
  
  ed.entra(a_leste)
- txted = Texto(a_leste, "Aqui vamos embora agora, vamos a visita!")
+ txted = Texto(a_leste, "Vamos a visita!")
  ed.vai = txted.vai
  
  ed1.entra(b_norte)
- txted1 = Texto(b_norte, "Aqui ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© a entrada, para passarmos da catraca precisamos falar com o guarda a sua direita.")
+ txted1 = Texto(b_norte, "Aqui e a entrada, para passarmos da catraca precisamos falar com o guarda a sua direita.")
  ed1.vai = txted1.vai
  
  ed2.entra(b_leste)
- txted2 = Texto(b_leste, "VÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ atÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© o atendimento para falar com o guarda, ele lhe darÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ as o que ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© necessÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡rio pra passar pela catraca.")
+ txted2 = Texto(b_leste, " E aqui solicitaremos o acesso para passarmos pela catraca.")
  ed2.vai = txted2.vai
  
  ed3.entra(c_norte)
