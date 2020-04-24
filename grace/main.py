@@ -40,9 +40,17 @@ class JoKenPo:
 class Rocha(JoKenPo):
     def __init__(self):
         print("você escolheu Rocha")
+
+class Papel(JoKenPo):
+    def __init__(self):
+        print("você escolheu Rocha")
+
+class Tesoura(JoKenPo):
+    def __init__(self):
+        print("você escolheu Rocha")
 def main():
     escolhe = dict(r=Rocha, p=Papel, t=Tesoura)
-    escolha = input("Digite r,p ou t para rocha, papel ou tesoura)
+    escolha = input("Digite r,p ou t para rocha, papel ou tesoura")
     escolheu = escolhe[escolha]
 
 
