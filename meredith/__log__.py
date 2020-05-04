@@ -3,3 +3,7 @@
 'error': '''
 Exception: <TypeError: innermost.C.tree[0].args.indexOf is not a function>
 '''},
+{'date': 'Mon May 04 2020 13:29:21.648 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: innermost.C.tree[0].args.indexOf is not a function>
+'''},
