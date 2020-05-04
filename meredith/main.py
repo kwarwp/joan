@@ -31,27 +31,44 @@ class gameg():
         style=dict (left=400, top=350, width=300, height="200px",))
         self.zezinho.entra(casa)
         self.rosalinda.entra(casa)
-        quadros = Cena( img = QUADROS)
-        casa.direita=quadros
+        self.quadros = quadros = Cena( img = QUADROS)
+        # casa.direita=quadros
+        casa.direita=Cena()
+        casa.direita.vai = self.quadros_vai
         tour= Cena( img = TOUR)
         tour.esquerda=quadros
         quadros.direita=tour
-        quadros.esquerda=casa
+        # quadros.esquerda=casa
+        quadros.esquerda=Cena()
+        quadros.esquerda.vai = self.casa_vai
         quadros1= Cena( img = QUADROS1)
         tour.direita=quadros1
         cofre = Cena(img = COFRE)# ESSE COFRE PRECISA TER UM HEREDPGRAMA PARA ABRIR
+        cofre.esquerda = quadros
+        heredo = Elemento(HEREDOGRAMA, x=540, y= 370, w=200, tit="Esse heredograma é a pista!")
+        heredo.entra(cofre)
+        o_quadro = Elemento(QUADRADO, x=340, y= 270, tit="Esse quadro tem algo diferente", style={"opacity":0.05})
+        o_quadro.vai = cofre.vai
+        o_quadro.entra(quadros)
         pergaminho = Cena (img = PERGAMINHO)
         quadros1.direita=pergaminho
         pergaminho.esquerda=quadros
         biblioteca = Cena (img = BIBLIOTECA)
-        pergaminho.direta= biblioteca
+        pergaminho.direita= biblioteca
         livro = Elemento (img = LIVRO)
         livro.entra(biblioteca)
         casa.vai()
-    def quadros(self):        
-        zezinho.entra(quadros)#colocar mesnagem confusa de zezinho em relação aos quadros
-        rosalinda.entra(quadros)
-        
+    def quadros_vai(self, *_):        
+        self.zezinho.entra(self.quadros)#colocar mesnagem confusa de zezinho em relação aos quadros
+        self.rosalinda.entra(self.quadros)
+        ver_quadro = Texto(self.quadros, "ZEZINHO: Preciso examinar cada quadro, acho que tem um mistério aqui!")
+        Texto(self.quadros, "ZEZINHO: Quadros! Muitos quadros, até quadros com escrita!", foi=ver_quadro.vai).vai()
+        self.quadros.vai()
+    def casa_vai(self, *_):        
+        self.zezinho.entra(self.casa)#colocar mesnagem confusa de zezinho em relação aos quadros
+        self.rosalinda.entra(self.casa)
+        self.casa.vai()
+    def tour(self):        
         zezinho.entra(tour)#zezinha volta para ver o quadros pois ficou encafifado
         rosalinda.entra(tour)#recebe um telfonema e diz que zezinho pode ficar a vontade, mas ela tera que se ausentar
         
