@@ -45,3 +45,10 @@ NameError: name 'PERGAMINHO' is not defined
     self.style.update(**style)
 TypeError: string indices must be integers
 '''},
+{'date': 'Mon May 04 2020 21:03:19.53 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 63
+  self.zezinho.tit = "Lindos quadros!
+                                     ^
+SyntaxError: EOL while scanning string literal
+'''},
