@@ -60,6 +60,8 @@ class gameg():
         casa.vai()
     def quadros_vai(self, *_):        
         self.zezinho.entra(self.quadros)#colocar mesnagem confusa de zezinho em relação aos quadros
+        self.zezinho.tit = "Lindos quadros!"
+        self.rosalinda.tit = "Obrigada! Fique à vontade para examiná-los!"
         self.rosalinda.entra(self.quadros)
         ver_quadro = Texto(self.quadros, "ZEZINHO: Preciso examinar cada quadro, acho que tem um mistério aqui!")
         Texto(self.quadros, "ZEZINHO: Quadros! Muitos quadros, até quadros com escrita!", foi=ver_quadro.vai).vai()
