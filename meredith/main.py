@@ -67,7 +67,9 @@ class gameg():
         Texto(self.quadros, "ZEZINHO: Quadros! Muitos quadros, até quadros com escrita!", foi=ver_quadro.vai).vai()
         self.quadros.vai()
     def casa_vai(self, *_):        
-        self.zezinho.entra(self.casa)#colocar mesnagem confusa de zezinho em relação aos quadros
+        self.zezinho.tit = "Você é uma pessoa muito agradável!"
+        self.rosalinda.tit = "Obrigada! Procuro tratar bem as pessoas"
+        self.zezinho.entra(self.casa)
         self.rosalinda.entra(self.casa)
         self.casa.vai()
     def tour(self):        
