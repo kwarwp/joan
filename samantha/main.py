@@ -26,7 +26,7 @@ QUADRO_4_CRIANCA_BRANCA_CABELO_LISO_OLHOS_VERDES = "https://i.imgur.com/ISvWiD4.
 QUADRO_5_CRIANCA_NEGRA_CABELO_BLACK_OLHOS_CASTANHOS = "https://i.imgur.com/qoGRKc8.jpg"
 QUADRO_6_CRIANCA_RUIVA_PELE_BRANCA_CABELO_VERMELHO = "https://i.imgur.com/DtSbcLh.jpg"
 GENE0, GENE1 = "https://i.imgur.com/UAYR77L.jpg", "https://i.imgur.com/R4HE1ho.jpg"
-GENE2, GENE3 = "https://i.imgur.com/ljpxkIt.jpg", "https://i.imgur.com/wkKr2OP.jpg"
+GENE2, GENE3 = "https://i.imgur.com/ljpxkIt.jpg", "https://i.imgur.com/e3OfADM.jpg"
 MUSEU_DA_VIDA = "https://i.imgur.com/s4ZBrRv.jpg"
 DNA = "https://www.facebook.com/Projeto-SupyGirls-2062797764002029"
 Genes = "https://i.imgur.com/SBcbyUc.gif"
@@ -57,10 +57,10 @@ class MiniGame:
             """Representa cada uma das linhas recortadas do herdograma original"""
             def __init__(self, linha, posicao):
                 self.posicao = posicao # posição original no topo da página
-                self.linha = Elemento(linha, x=200+posicao*200, y=20, w=175, h=125, cena=esta_cena)
+                self.linha = Elemento(linha, x=posicao*200, y=20, w=175, h=125, cena=esta_cena)
                 self.linha.vai = self.clica_e_posiciona_a_linha #quando clica, monta o herdograma
             def zera(self):
-                self.linha.x = 200+self.posicao*200  # posiciona cada peça com 200 pixels de distância
+                self.linha.x = self.posicao*200  # posiciona cada peça com 200 pixels de distância
                 self.linha.y = 20  # posiciona a peça no topo da página
                 self.linha.vai = self.clica_e_posiciona_a_linha
             def clica_e_posiciona_a_linha(self, *_):
@@ -88,14 +88,14 @@ class MiniGame:
         self.posicoes_montadas += [posicao]  # adiciona o índice desta peça na lista de peças montadas
         if self.posicoes_montadas == self.posicoes_corretas:
             self.acertou()  # invoca a ação acertou se montou nas posições corretas
-            return 300+(175*self.parte_inicial%2), 200+self.altura_da_linha*(self.parte_inicial//2)
+            return 300+175*(self.parte_inicial%2), 200+self.altura_da_linha*(self.parte_inicial//2)
         else:
             if len(self.posicoes_montadas) == 4:  # se montou qutro peças incorretas reinicia o game
                 [linha.zera() for linha in self.linhas]  # volta as peças para o topo
                 self.posicoes_montadas = []  # indica que nenhuma peça foi montada
                 self.parte_inicial = -1  # inicia a altura de ontagem da primeira peça
                 return 0, 0  #  retorna uma posição inválida para sinalizar a peça
-            return 300+(175*self.parte_inicial%2), 200+self.altura_da_linha*(self.parte_inicial//2)
+            return 300+175*(self.parte_inicial%2), 200+self.altura_da_linha*(self.parte_inicial//2)
 
 class Primeira_fase():
     def __init__(self):
@@ -114,10 +114,11 @@ class Primeira_fase():
         sala_fiocruz.vai()
         #CENA 2 VERBO ENTENDER HEREDITARIEDADE
 
-        museu_da_vida = Cena(MUSEU_DA_VIDA)
+        self.museu_da_vida = Cena(MUSEU_DA_VIDA)
     def acertou(self):
-        Texto(self.sala_fiocruz, "Encontrei um pergaminho!").vai()
+        Texto(self.sala_fiocruz, "Encontrei um pergaminho! Achei uma saída pela direita!").vai()
         pergaminho = Elemento(img=PERGAMINHO,  cena=self.sala_fiocruz)
+        self.sala_fiocruz.direita = self.museu_da_vida
 
 '''
 O NPC DEVERÁ APRESENTAR AS SEGUINTES DICAS ORGANIZAR AS PALAVRAS UTILIZANDO A ORDEM CORRETA DE ENTENDIMENTO
