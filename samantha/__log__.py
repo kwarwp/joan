@@ -30,3 +30,7 @@ Exception: <SyntaxError: invalid assignment left-hand side>
     STYLE["width"] = 800
 AttributeError: 'module' object has no attribute '__setitem__'
 '''},
+{'date': 'Thu May 07 2020 12:16:23.0 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <SyntaxError: invalid assignment left-hand side>
+'''},
