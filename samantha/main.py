@@ -80,22 +80,26 @@ class MiniGame:
         self.posicoes_corretas = [1, 3, 2, 0]  # lista das linhas montadas corretamente
 
     def posiciona_proxima(self, posicao):
-        """Chamdo pelo clique (vai) de cada peça. Atualiza a próxima posição da peça.
+        """Chamado pelo clique (vai) de cada peça. Atualiza a próxima posição da peça.
            Calcula se montou correto, comparando com a lista de posicões corretas.
            Se já montou quatro peças, e não acerto sinaliza com zero, para iniciar o jogo.
         """
-        self.parte_inicial += 1  # incrementa a posição para montar na linha de baixo
+        largura_da_peca, inicio_horizontal, inicio_vertical, numero_de_pecas = 175, 300, 200, 4
+        numero_de_pecas_por_linha = 2
+        self.parte_inicial += 1  # incrementa a posição para montar a próxima posiçao da peça
         self.posicoes_montadas += [posicao]  # adiciona o índice desta peça na lista de peças montadas
         if self.posicoes_montadas == self.posicoes_corretas:
             self.acertou()  # invoca a ação acertou se montou nas posições corretas
-            return 300+175*(self.parte_inicial%2), 200+self.altura_da_linha*(self.parte_inicial//2)
+            return (inicio_horizontal+largura_da_peca*(self.parte_inicial%numero_de_pecas_por_linha),
+                    inicio_vertical+self.altura_da_linha*(self.parte_inicial//numero_de_pecas_por_linha))
         else:
-            if len(self.posicoes_montadas) == 4:  # se montou qutro peças incorretas reinicia o game
+            if len(self.posicoes_montadas) == numero_de_pecas:  # se montou qutro peças incorretas reinicia o game
                 [linha.zera() for linha in self.linhas]  # volta as peças para o topo
                 self.posicoes_montadas = []  # indica que nenhuma peça foi montada
                 self.parte_inicial = -1  # inicia a altura de ontagem da primeira peça
                 return 0, 0  #  retorna uma posição inválida para sinalizar a peça
-            return 300+175*(self.parte_inicial%2), 200+self.altura_da_linha*(self.parte_inicial//2)
+            return (inicio_horizontal+largura_da_peca*(self.parte_inicial%numero_de_pecas_por_linha),
+                    inicio_vertical+self.altura_da_linha*(self.parte_inicial//numero_de_pecas_por_linha))
 
 class Primeira_fase():
     def __init__(self):
