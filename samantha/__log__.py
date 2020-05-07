@@ -10,3 +10,7 @@ SyntaxError: invalid syntax
 'error': '''
 Exception: <SyntaxError: invalid assignment left-hand side>
 '''},
+{'date': 'Thu May 07 2020 12:09:39.565 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <SyntaxError: invalid assignment left-hand side>
+'''},
