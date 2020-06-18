@@ -2,7 +2,7 @@
 # -*- coding: UTF8 -*-
 # Copyright © 2020  Carlo Oliveira <carlo@nce.ufrj.br>,
 # `Labase <http://labase.selfip.org/>`__; `GPL <http://is.gd/3Udt>`__.
-# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 """ Jogo do Pedra Papel tesoura.
 
