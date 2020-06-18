@@ -1,9 +1,8 @@
 #! /usr/bin/env python
 # -*- coding: UTF8 -*-
-# This file is part of  program Epydemic
-# Copyright Â© 2020  Carlo Oliveira <carlo@nce.ufrj.br>,
+# Copyright © 2020  Carlo Oliveira <carlo@nce.ufrj.br>,
 # `Labase <http://labase.selfip.org/>`__; `GPL <http://is.gd/3Udt>`__.
-# SPDX-License-Identifier: (GPLv3-or-later AND LGPL-2.0-only) WITH bison-exception
+# SPDX-License-Identifier: GPL-2.0-or-later
 
 """ Jogo do Pedra Papel tesoura.
 
