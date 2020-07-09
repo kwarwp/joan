@@ -15,3 +15,10 @@
     CASTELO - "https://i.imgur.com/zOxshRh.jpg"
 NameError: name 'CASTELO' is not defined
 '''},
+{'date': 'Thu Jul 09 2020 16:37:51.202 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module adda.main line 21
+  def vai()
+            ^
+SyntaxError: invalid syntax
+'''},
