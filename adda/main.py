@@ -18,6 +18,7 @@ CASTELO = "https://i.imgur.com/wz5XKcr.jpg"
 class Fazenda:
     def __init__(self):
         castelo = Cena(CASTELO)
+    def vai()
         castelo.vai()
         
-Fazenda()
+Fazenda().vai()
