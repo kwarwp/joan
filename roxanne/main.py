@@ -13,7 +13,7 @@ def jogo():
     
     
     waka1 = Elemento(img = linkWaka1, tit = "Waka 1",
-                         style = dict (y = 380, x = 340, h = 200, w = 200))
+                         y = 380, x = 340, h = 200, w = 200)
     waka1.entra(cenaIlha)
     txtwaka1 = Texto(cenaIlha, "vamos para a ilha das deusas")
     waka1.vai = txtwaka1.vai
