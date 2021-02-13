@@ -12,6 +12,7 @@ def jogo():
     cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
     cena_gruta = Cena(img = linkGruta1)
     cenaIlha.meio = cena_gruta
+    cena_gruta.meio = cenaIlha
     okami1 = Elemento(img = linkOkami1, tit = "Okami",
                          y = 400, x = 170, h = 200, w = 200)
     okami1.entra(cenaIlha)
