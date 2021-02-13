@@ -14,13 +14,13 @@ def jogo():
     okami1.entra(cenaIlha)
      
     
-    waka1 = Elemento(img = linkWaka1, tit = "Waka 1",
+    waka1 = Elemento(img = linkWaka1, tit = "Waka",
                          y = 340, x = 305, h = 250, w = 200)
     waka1.entra(cenaIlha)
     txtwaka1 = Texto(cenaIlha, "Vamos para a ilha das deusas.")
     waka1.vai = txtwaka1.vai
     
-    ark1 = Elemento(img = linkArk1, tit = "Ark 1",
+    ark1 = Elemento(img = linkArk1, tit = "Ark",
                          y = 400, x = 40, h = 200, w = 500)
     ark1.entra(cenaIlha)
     
