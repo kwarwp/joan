@@ -9,7 +9,7 @@ def jogo():
     okami1 = Elemento(img = linkOkami1, tit = "Okami 1",
                          style = dict (top = 200, left = 60, height = 100, width = 60))
     okami1.entra(cenaIlha)
-    texto1 = Texto(cenaIlha, "vamos para a ilha das deusas")
+    txtokami1 = Texto(cenaIlha, "vamos para a ilha das deusas")
     okami1.vai = txtokami1.vai
     cenaIlha.vai()
 jogo()
