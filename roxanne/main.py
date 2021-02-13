@@ -7,7 +7,7 @@ linkOkami1 = "https://i.imgur.com/hr6DsqU.png"
 def jogo():
     cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
     Okami1 = Elemento(img = linkOkami1, tit = "Okami 1",
-                         style = dict (top = 150, left = 60, height = 100, width = 60))
+                         style = dict (top = 100, left = 60, height = 100, width = 60))
     Okami1.entra(cenaIlha)
     cenaIlha.vai()
 jogo()
