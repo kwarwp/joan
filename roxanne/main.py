@@ -1,5 +1,6 @@
 # Miguel Roman-Okami Shiranui
-from _spy.vitollino.main import Cena, Elemento, Texto
+from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
+STYLE.update(width=1150, height="600px")
 
 linkilhadeusas = "https://i.imgur.com/5UvVC5M.png"
 linkOkami1 = "https://i.imgur.com/hr6DsqU.png"
