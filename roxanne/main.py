@@ -6,8 +6,8 @@ linkOkami1 = "https://i.imgur.com/hr6DsqU.png"
 
 def jogo():
     cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
-    nomeOkami1 = Elemento(img = linkOkami1, tit = "Okami 1",
+    Okami1 = Elemento(img = linkOkami1, tit = "Okami 1",
                          style = dict (top = 150, left = 60, height = 200, width = 60))
-    
+    Okami1.entra(cenaIlha)
     cenaIlha.vai()
 jogo()
