@@ -8,7 +8,7 @@ linkWaka1 = "https://i.imgur.com/e641yTi.png"
 def jogo():
     cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
     okami1 = Elemento(img = linkOkami1, tit = "Okami 1",
-                         style = dict (top = 400, left = 60, height = 100, width = 60))
+                         style = dict (top = 300, left = 60, height = 100, width = 60))
     okami1.entra(cenaIlha)
     
     
