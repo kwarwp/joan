@@ -21,7 +21,7 @@ def jogo():
     waka1.vai = txtwaka1.vai
     
     ark1 = Elemento(img = linkArk1, tit = "Ark 1",
-                         y = 400, x = 60, h = 200, w = 200)
+                         y = 400, x = 40, h = 200, w = 500)
     ark1.entra(cenaIlha)
     
     cenaIlha.vai()
