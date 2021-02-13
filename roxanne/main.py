@@ -2,9 +2,12 @@
 from _spy.vitollino.main import Cena, Elemento, Texto
 
 linkilhadeusas = "https://i.imgur.com/5UvVC5M.png"
-linkokami1 = "https://i.imgur.com/hr6DsqU.png"
+linkOkami1 = "https://i.imgur.com/hr6DsqU.png"
 
 def jogo():
     cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
+    nomeOkami1 = Elemento(img = linkOkami1, tit = "Okami 1",
+                         style = dict (top = 150, left = 60, height = 200, width = 60))
+    
     cenaIlha.vai()
 jogo()
