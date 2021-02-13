@@ -15,7 +15,7 @@ def jogo():
     waka1 = Elemento(img = linkWaka1, tit = "Waka 1",
                          y = 340, x = 340, h = 250, w = 200)
     waka1.entra(cenaIlha)
-    txtwaka1 = Texto(cenaIlha, "vamos para a ilha das deusas")
+    txtwaka1 = Texto(cenaIlha, "Vamos para a ilha das deusas.")
     waka1.vai = txtwaka1.vai
     
     cenaIlha.vai()
