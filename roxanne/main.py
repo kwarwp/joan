@@ -7,3 +7,4 @@ linkokami1 = "https://i.imgur.com/hr6DsqU.png"
 def jogo():
     cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
     cenaIlha.vai()
+jogo()
