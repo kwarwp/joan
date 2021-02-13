@@ -28,7 +28,7 @@ def jogo():
     ark1.entra(cenaIlha)
     
     rat1 = Elemento(img = linkRat1, tit = "cena_gruta",
-                         y = 400, x = 170, h = 400, w = 400)
+                         y = 300, x = 170, h = 400, w = 400)
     rat1.entra(cena_gruta)
     cena_gruta.vai()
 jogo()
