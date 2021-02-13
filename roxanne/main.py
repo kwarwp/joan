@@ -9,7 +9,7 @@ linkArk1 = "https://i.imgur.com/DhV0DOD.png"
 
 def jogo():
     cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
-    okami1 = Elemento(img = linkOkami1, tit = "Okami 1",
+    okami1 = Elemento(img = linkOkami1, tit = "Okami",
                          y = 400, x = 170, h = 200, w = 200)
     okami1.entra(cenaIlha)
      
