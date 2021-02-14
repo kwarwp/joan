@@ -19,6 +19,8 @@ def jogo():
     INVENTARIO.bota(invent)
     mapa = Elemento(img = linkMapa, tit = "Mapa", h = 200, w = 200)
     INVENTARIO.bota(mapa)
+    mapa = Elemento(img = linkMapa, tit = "Mapa", h = 200, w = 200)
+    INVENTARIO.bota(mapa)
     cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
     cena_gruta = Cena(img = linkGruta1)
     cenaIlha.meio = cena_gruta
