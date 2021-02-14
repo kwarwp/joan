@@ -36,6 +36,12 @@ def jogo():
     ark2 = Elemento(img = linkArk2, tit = "Ark",
                          y = 350, x = 830, h = 100, w = 100)
     ark2.entra(cena_gruta) 
-    ark2.vai = cenaIlha.vai  
+    ark2.vai = cenaIlha.vai
+     cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
+    cena_gruta = Cena(img = linkGruta1)
+    cenaIlha.meio = cena_gruta
+    okami1 = Elemento(img = linkOkami1, tit = "Okami",
+                         y = 400, x = 170, h = 200, w = 200)
+    okami1.entra(cena_gruta)
     cena_gruta.vai()
 jogo()
