@@ -31,6 +31,8 @@ def jogo():
     rat1 = Elemento(img = linkRat1, tit = "Rat godess",
                          y = 300, x = 170, h = 400, w = 400)
     rat1.entra(cena_gruta)
+      txtrat1 = Texto(cena_gruta, "afie minha espada mas por um porem prove sue valor completando ésa missão.")
+    waka1.vai = txtwaka1.vai
     ark2 = Elemento(img = linkArk2, tit = "Ark",
                          y = 350, x = 830, h = 100, w = 100)
     ark2.entra(cena_gruta) 
