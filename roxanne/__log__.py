@@ -67,3 +67,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sat Feb 13 2021 21:39:23.197 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
+  ^
+IndentationError: unexpected indent
+'''},
