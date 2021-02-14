@@ -33,7 +33,7 @@ def jogo():
                          y = 300, x = 170, h = 400, w = 400)
     rat1.entra(cena_gruta)
     ark2 = Elemento(img = linkArk2, tit = "Ark",
-                         y = 350, x = 810, h = 100, w = 100)
+                         y = 350, x = 830, h = 100, w = 100)
     ark2.entra(cena_gruta)  
     cena_gruta.vai()
 jogo()
