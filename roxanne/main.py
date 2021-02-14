@@ -8,6 +8,7 @@ linkWaka1 = "https://i.imgur.com/e641yTi.png"
 linkArk1 = "https://i.imgur.com/DhV0DOD.png"
 linkGruta1 = "https://4.bp.blogspot.com/-MplqVVRjFCo/VzYD90Cm5jI/AAAAAAAAX_Q/x2JbhgAwJwAi0cNTQq2l2j6hLCEX--gZgCLcB/s1600/Gruta%2Bde%2BBacaetava.jpg"
 linkRat1 = "https://i.imgur.com/Mm8ebIk.png"
+linkArk2 = "https://i.imgur.com/DhV0DOD.png"
 def jogo():
     cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
     cena_gruta = Cena(img = linkGruta1)
@@ -31,5 +32,8 @@ def jogo():
     rat1 = Elemento(img = linkRat1, tit = "cena_gruta",
                          y = 300, x = 170, h = 400, w = 400)
     rat1.entra(cena_gruta)
+    ark2 = Elemento(img = linkArk2, tit = "Ark",
+                         y = 400, x = 170, h = 200, w = 200)
+    ark2.entra(cenaIlha)  
     cena_gruta.vai()
 jogo()
