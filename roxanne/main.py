@@ -1,5 +1,5 @@
 # Miguel Roman-Okami Shiranui
-from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
+from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, INVENTARIO
 STYLE.update(width=1150, height="600px")
 
 linkilhadeusas = "https://i.imgur.com/5UvVC5M.png"
@@ -10,7 +10,15 @@ linkGruta1 = "https://4.bp.blogspot.com/-MplqVVRjFCo/VzYD90Cm5jI/AAAAAAAAX_Q/x2J
 linkRat1 = "https://i.imgur.com/Mm8ebIk.png"
 linkArk2 = "https://i.imgur.com/DhV0DOD.png"
 linkEspada1 = "https://i.imgur.com/3oAUPu9.png"
+linkInventario = "https://i.imgur.com/aVQK2Vk.png"
+linkMapa = "https://i.imgur.com/7XkXmxS.png"
 def jogo():
+
+    INVENTARIO.inicia()
+    invent = Elemento(img = linkInventario, tit = "Inventário", h = 200, w = 200)
+    INVENTARIO.bota(invent)
+    mapa = Elemento(img = linkMapa, tit = "Mapa", h = 200, w = 200)
+    INVENTARIO.bota(mapa)
     cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
     cena_gruta = Cena(img = linkGruta1)
     cenaIlha.meio = cena_gruta
