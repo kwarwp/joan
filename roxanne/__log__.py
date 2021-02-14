@@ -60,3 +60,10 @@ NameError: name 'waka1' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sat Feb 13 2021 21:35:15.184 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
+  ^
+IndentationError: unexpected indent
+'''},
