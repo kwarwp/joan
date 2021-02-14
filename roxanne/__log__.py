@@ -53,3 +53,10 @@ NameError: name 'txtokami1' is not defined
     waka1.entra(cenaIlha)
 NameError: name 'waka1' is not defined
 '''},
+{'date': 'Sat Feb 13 2021 21:31:26.727 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 34
+  txtrat1 = Texto(cena_gruta, "afie minha espada mas por um porem prove sue valor completando ésa missão.")
+  ^
+IndentationError: unexpected indent
+'''},
