@@ -8,15 +8,45 @@ linkOkami1 = "https://i.imgur.com/hr6DsqU.png"
 linkWaka1 = "https://i.imgur.com/e641yTi.png"
 linkArk1 = "https://imgur.com/zzfVPmy.png"
 linkGruta1 = "https://4.bp.blogspot.com/-MplqVVRjFCo/VzYD90Cm5jI/AAAAAAAAX_Q/x2JbhgAwJwAi0cNTQq2l2j6hLCEX--gZgCLcB/s1600/Gruta%2Bde%2BBacaetava.jpg"
+linkRat1 = "https://i.imgur.com/Mm8ebIk.png"
+linkArk2 = "https://i.imgur.com/DhV0DOD.png"
 inventario = "https://i.imgur.com/OhT5Wxa.png"
+quest_img = "https://i.imgur.com/rVZ1nFW.png"
+option_img = "https://i.imgur.com/xmMC1Se.png"
 okami_fala = 0
+cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
+cena_gruta = Cena(img = linkGruta1)
+    
+def gruta(_=0):
+    cena_gruta = Cena(img = linkGruta1)
+    
+    rat1 = Elemento(img = linkRat1, tit = "Rat godess",
+                         y = 300, x = 170, h = 400, w = 400)
+    rat1.entra(cena_gruta)
+    txtrat1 = Texto(cena_gruta, "afie minha espada mas por um porem prove sue valor completando ésa missão.")
+    rat1.vai = txtrat1.vai
+    ark2 = Elemento(img = linkArk2, tit = "Ark",
+                         y = 350, x = 830, h = 100, w = 100)
+    ark2.entra(cena_gruta) 
+    ark2.vai = cenaIlha.vai
+    cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
+    cenaIlha.meio = cena_gruta
+    okami1 = Elemento(img = linkOkami1, tit = "Okami",
+                         y = 400, x = 170, h = 200, w = 200)
+    okami1.entra(cena_gruta)
+    cena_gruta.vai()
 
 def jogo():
+    INVENTARIO.inicia()
     invent = Elemento(img = inventario, tit = "inventário", h = 200, w = 200)
     INVENTARIO.bota(invent)
-    cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
-    cena_gruta = Cena(img = linkGruta1)
-    cenaIlha.meio = cena_gruta
+    quest = Elemento(img = quest_img, tit = "quest", h = 200, w = 200)
+    INVENTARIO.bota(quest)
+    option = Elemento(img = option_img, tit = "options", h = 200, w = 200)
+    INVENTARIO.bota(option)
+    vai_gruta = Cena()
+    vai_guta.vai = gruta
+    cenaIlha.meio = vai_gruta
     okami1 = Elemento(img = linkOkami1, tit = "Okami",
                          y = 400, x = 170, h = 200, w = 200)
     okami1.entra(cenaIlha)
@@ -40,4 +70,5 @@ def jogo():
     ark1.entra(cenaIlha)
     
     cenaIlha.vai()
+
 jogo()
