@@ -108,3 +108,10 @@ NameError: name 'linkMap' is not defined
     ESTILE.update(width="60px", height="60px", minHeight="60px")
 NameError: name 'ESTILE' is not defined
 '''},
+{'date': 'Sun Feb 14 2021 17:29:41.367 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 59
+  espada1.entra(cena_gruta) 
+  ^
+IndentationError: unexpected indent
+'''},
