@@ -1,11 +1,10 @@
 # joan.courtney.main.py
 # Miguel Roman-Okami Shiranui
-from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, INVENTARIO, ISTYLE,  ESTYLE, Inventario
+from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, INVENTARIO,  ESTYLE
 STYLE.update(width=1150, height="600px")
-ISTYLE.update(height="60px", minHeight="60px")
 ESTYLE.update(width="60px", height="60px", minHeight="60px")
-ESTYLE["min-height"]="60px"
-INVENTARIO = Inventario()
+#INVENTARIO.style["min-height"] = "60px"
+INVENTARIO.elt.style.height= "60px"
 
 linkilhadeusas = "https://i.imgur.com/5UvVC5M.png"
 linkOkami1 = "https://i.imgur.com/hr6DsqU.png"
@@ -46,7 +45,6 @@ def gruta(_=0):
 
 def jogo():
     """Esta função cria a cena inicial."""
-    INVENTARIO.style["min-height"] = "60px"
     INVENTARIO.inicia()
     invent = Elemento(img = inventario, tit = "inventário", h = 200, w = 200)
     INVENTARIO.bota(invent)
@@ -81,11 +79,5 @@ def jogo():
     ark1.entra(cenaIlha)
     
     cenaIlha.vai()
-    invent.elt.style.width="60px"
-    invent.elt.style.height="60px"
-    invent.elt.style = ESTYLE
-    INVENTARIO.item["inventario"]
-    invent.w=60
-    invent.h=60
 
 jogo()
