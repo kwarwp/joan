@@ -5,7 +5,6 @@ STYLE.update(width=1150, height="600px")
 ISTYLE.update(height="60px", minHeight="60px")
 ESTYLE.update(width="60px", height="60px", minHeight="60px")
 ESTYLE["min-height"]="60px"
-print(ESTYLE)
 INVENTARIO = Inventario()
 
 linkilhadeusas = "https://i.imgur.com/5UvVC5M.png"
@@ -85,5 +84,8 @@ def jogo():
     invent.elt.style.width="60px"
     invent.elt.style.height="60px"
     invent.elt.style = ESTYLE
+    INVENTARIO.item["inventario"]
+    invent.w=60
+    invent.h=60
 
 jogo()
