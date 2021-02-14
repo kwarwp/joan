@@ -18,6 +18,7 @@ cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
 cena_gruta = Cena(img = linkGruta1)
     
 def gruta(_=0):
+    global cenaIlha
     cena_gruta = Cena(img = linkGruta1)
     
     rat1 = Elemento(img = linkRat1, tit = "Rat godess",
@@ -44,9 +45,8 @@ def jogo():
     INVENTARIO.bota(quest)
     option = Elemento(img = option_img, tit = "options", h = 200, w = 200)
     INVENTARIO.bota(option)
-    vai_gruta = Cena()
-    vai_guta.vai = gruta
-    cenaIlha.meio = vai_gruta
+    cenaIlha.meio = Cena()
+    cenaIlha.meio.vai = gruta
     okami1 = Elemento(img = linkOkami1, tit = "Okami",
                          y = 400, x = 170, h = 200, w = 200)
     okami1.entra(cenaIlha)
