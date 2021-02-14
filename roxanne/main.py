@@ -1,7 +1,8 @@
 # Miguel Roman-Okami Shiranui
-from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, INVENTARIO
+from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, INVENTARIO, ESTYLE
 STYLE.update(width=1150, height="600px")
-
+ESTYLE.update(width="60px", height="60px", minHeight="60px")
+INVENTARIO.elt.style.height= "60px"
 linkilhadeusas = "https://i.imgur.com/5UvVC5M.png"
 linkOkami1 = "https://i.imgur.com/hr6DsqU.png"
 linkWaka1 = "https://i.imgur.com/e641yTi.png"
@@ -12,6 +13,11 @@ linkArk2 = "https://i.imgur.com/DhV0DOD.png"
 linkEspada1 = "https://i.imgur.com/3oAUPu9.png"
 linkInventario = "https://i.imgur.com/aVQK2Vk.png"
 linkMapa = "https://i.imgur.com/7XkXmxS.png"
+linkQuests = "https://i.imgur.com/ZmFyU4K.png"
+linkBrush = "https://i.imgur.com/kLF2yfu.png"
+linkEspadaicone = "https://i.imgur.com/5dS5fKX.png"
+linkCenablockhead = "https://i.imgur.com/H7yYveG.png"
+#site iconehttps://okami.fandom.com/wiki/Celestial_Plain?file=Spirit_Globe_icon.png
 def jogo():
 
     INVENTARIO.inicia()
@@ -19,10 +25,13 @@ def jogo():
     INVENTARIO.bota(invent)
     mapa = Elemento(img = linkMapa, tit = "Mapa", h = 200, w = 200)
     INVENTARIO.bota(mapa)
-    mapa = Elemento(img = linkMapa, tit = "Mapa", h = 200, w = 200)
+    quests = Elemento(img = linkQuests, tit = "Quests", h = 150, w = 150)
+    INVENTARIO.bota(quests)
+    espada = Elemento(img = linkEspadaicone, tit = "espada", h = 200, w = 200)
     INVENTARIO.bota(mapa)
     cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
     cena_gruta = Cena(img = linkGruta1)
+    cena_blockhead = Cena(img = linkCenablockhead)
     cenaIlha.meio = cena_gruta
     okami1 = Elemento(img = linkOkami1, tit = "Okami",
                          y = 400, x = 170, h = 200, w = 200)
@@ -52,12 +61,13 @@ def jogo():
                          y = 400, x = 170, h = 200, w = 200)
     okami1.entra(cena_gruta)
     waka1 = Elemento(img = linkWaka1, tit = "Waka",
-                         y = 340, x = 700, h = 250, w = 200)
+                         y = 340, x = 890, h = 250, w = 200)
     waka1.entra(cena_gruta)
-    txtwaka1 = Texto(cena_gruta, "Vamos faser a missão.")
+    txtwaka1 = Texto(cena_gruta, "Vamos fazer a missão.")
     waka1.vai = txtwaka1.vai
     espada1 = Elemento(img = linkEspada1, tit = "espada",
                          y = 340, x = 450, h = 200, w = 200)
     espada1.entra(cena_gruta)
+    espada1.vai = cena_blockhead.vai
     cena_gruta.vai()
 jogo()
