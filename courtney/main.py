@@ -14,10 +14,12 @@ inventario = "https://i.imgur.com/OhT5Wxa.png"
 quest_img = "https://i.imgur.com/rVZ1nFW.png"
 option_img = "https://i.imgur.com/xmMC1Se.png"
 okami_fala = 0
+"""As cenas são criadas primeiro, aqui em cima"""
 cenaIlha = Cena(img = "https://i.imgur.com/5UvVC5M.png")
 cena_gruta = Cena(img = linkGruta1)
     
 def gruta(_=0):
+    """Você tem um 'def' (função) para cada cena, esta aqui faz a cena da gruta"""
     global cenaIlha
     cena_gruta = Cena(img = linkGruta1)
     
@@ -38,6 +40,7 @@ def gruta(_=0):
     cena_gruta.vai()
 
 def jogo():
+    """Esta função cria a cena inicial."""
     INVENTARIO.inicia()
     invent = Elemento(img = inventario, tit = "inventário", h = 200, w = 200)
     INVENTARIO.bota(invent)
@@ -45,8 +48,8 @@ def jogo():
     INVENTARIO.bota(quest)
     option = Elemento(img = option_img, tit = "options", h = 200, w = 200)
     INVENTARIO.bota(option)
-    cenaIlha.meio = Cena()
-    cenaIlha.meio.vai = gruta
+    cenaIlha.meio = Cena() # criei uma cena falsa para usar o vai dela 
+    cenaIlha.meio.vai = gruta # o vai na verdade chama a função gruta
     okami1 = Elemento(img = linkOkami1, tit = "Okami",
                          y = 400, x = 170, h = 200, w = 200)
     okami1.entra(cenaIlha)
