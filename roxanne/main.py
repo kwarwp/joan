@@ -17,6 +17,7 @@ linkQuests = "https://i.imgur.com/ZmFyU4K.png"
 linkBrush = "https://i.imgur.com/kLF2yfu.png"
 linkEspadaicone = "https://i.imgur.com/5dS5fKX.png"
 linkCenablockhead = "https://i.imgur.com/H7yYveG.png"
+linkReturn1 = "https://i.imgur.com/pvJvcNs.png"
 #site iconehttps://okami.fandom.com/wiki/Celestial_Plain?file=Spirit_Globe_icon.png
 def jogo():
 
@@ -69,5 +70,9 @@ def jogo():
                          y = 340, x = 450, h = 200, w = 200)
     espada1.entra(cena_gruta)
     espada1.vai = cena_blockhead.vai
+    return1 = Elemento(img = linkReturn1, tit = "Return",
+                         y = 50, x = 50, h = 100, w = 100)
+    return1.entra(cena_blockhead)
+    return1.vai = cena_gruta.vai
     cena_gruta.vai()
 jogo()
