@@ -70,8 +70,9 @@ def jogo():
                          y = 340, x = 450, h = 200, w = 200)
     espada1.entra(cena_gruta)
     espada1.vai = cena_blockhead.vai
+    
     return1 = Elemento(img = linkReturn1, tit = "Return",
-                         y = 50, x = 50, h = 100, w = 100)
+                         y = 50, x = 170, h = 100, w = 100)
     return1.entra(cena_blockhead)
     return1.vai = cena_gruta.vai
     cena_gruta.vai()
