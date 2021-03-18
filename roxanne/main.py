@@ -18,6 +18,7 @@ linkBrush = "https://i.imgur.com/kLF2yfu.png"
 linkEspadaicone = "https://i.imgur.com/5dS5fKX.png"
 linkCenablockhead = "https://i.imgur.com/H7yYveG.png"
 linkReturn1 = "https://i.imgur.com/pvJvcNs.png"
+linksecretroom = "https://i.imgur.com/pvJvcNs.png"
 #site iconehttps://okami.fandom.com/wiki/Celestial_Plain?file=Spirit_Globe_icon.png
 def jogo():
 
@@ -75,5 +76,10 @@ def jogo():
                          y = 50, x = 50, h = 100, w = 100)
     return1.entra(cena_blockhead)
     return1.vai = cena_gruta.vai
+    
+    secretroom = Elemento(img = linksecretroom, tit = "ester egg",
+                         y = 350, x = 830, h = 100, w = 100)
+    secretroom.entra(cena_gruta) 
+    secretroom.vai = cenaIlha.vai
     cena_gruta.vai()
 jogo()
