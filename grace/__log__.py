@@ -89,3 +89,10 @@ SyntaxError: EOL while scanning string literal
     self.fala = J.n(fala, cena=self.isaias)
 TypeError: __init__() got multiple values for argument 'cena'
 '''},
+{'date': 'Thu Jun 24 2021 10:52:19.557 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 46
+  ' Clique no X para fechar esta fala e clique no profeta Isaías para continuar.')
+   ^
+SyntaxError: invalid syntax
+'''},
