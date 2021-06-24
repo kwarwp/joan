@@ -123,6 +123,6 @@ class Zacarias:
         J.n(self.anuncia, fala).vai()
         
 if __name__ == "__main__":
-    #Joao().vai()
-    Zacarias().vai()
+    Joao().vai()
+    #Zacarias().vai()
     
