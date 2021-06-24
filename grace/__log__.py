@@ -179,3 +179,10 @@ AttributeError: 'Zacarias' object has no attribute 'cortina'
     self.deserto.vai()
 AttributeError: 'Zacarias' object has no attribute 'deserto'
 '''},
+{'date': 'Thu Jun 24 2021 12:31:48.49 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 98
+  falacib = ('Este é Zacharias, ele é um sacerdote no templo e já é bem velho.'
+                                                                                                                                                                                     ^
+SyntaxError: invalid syntax
+'''},
