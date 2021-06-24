@@ -136,3 +136,10 @@ AttributeError: 'Isaias' object has no attribute 'CIBELE'
     self.isaias.esquerda = J.c("", vai=self.voz)
 AttributeError: 'Isaias' object has no attribute 'voz'
 '''},
+{'date': 'Thu Jun 24 2021 12:05:55.405 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 64
+  DESERTO = "https://largest.org/wp-content/uploads/2018/12/Arabian-Desert.jpg"
+  ^
+IndentationError: unexpected indent
+'''},
