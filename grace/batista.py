@@ -41,13 +41,13 @@ class Isaias:
     def __init__(self):
         self.isaias = J.c(self.ISAIAS)
         self.deserto = Deserto()
-        fala = 'Há uma voz que clama: “Em meio à terra desértica preparai o caminho para Yahweh;' 
-        ' na estepe, aplanai uma vereda para o nosso Deus!"'
+        fala = ('Há uma voz que clama: “Em meio à terra desértica preparai o caminho para Yahweh;' 
+        ' na estepe, aplanai uma vereda para o nosso Deus!"')
         self.cibele = J.a(Joao.CIBELE, y=400, w=200, h=250, cena=self.isaias)
         falacib = ('Este é o profeta Isaías. No ano de 711 antes de Cristo ele anunciou uma profecia.'
         ' Clique no X para fechar esta fala e clique no profeta Isaías para continuar.')
 
-        self.fala = J.n(self.isaias, fala)
+        self.fala = J.n(self.isaias, fala, foi=self.voz_foi)
         self.falacib = J.n(self.isaias, falacib, foi=self.foi)
         self.isaias.esquerda = J.c("", vai=self.voz)
         self.isaias.meio = J.c("", vai=self.voz)
@@ -57,6 +57,8 @@ class Isaias:
         self.isaias.vai()
         self.falacib.vai()
     def voz(self, _=0):
+        self.fala.vai()
+    def voz_foi(self, _=0):
         self.deserto.vai()
 
 
@@ -73,13 +75,14 @@ class Deserto:
         self.falacib = J.n(self.deserto, falacib, foi=self.foi)
         self.deserto.esquerda = J.c("", vai=self.voz)
         self.deserto.meio = J.c("", vai=self.voz)
+        self.zacarias = Zacarias()
     def foi(self, _=0):
         self.cibele.entra(LIMBO)
     def vai(self):
         self.deserto.vai()
         self.falacib.vai()
     def voz(self, _=0):
-        self.joao = J.a(self.JOAO,x=300, y=200, w=200, h=250, cena=self.deserto)
+        self.joao = J.a(self.JOAO,x=300, y=200, w=200, h=250, cena=self.deserto, vai=self.zacarias.vai)
         self.cibele.entra(LIMBO)
 
 
@@ -103,7 +106,7 @@ class Zacarias:
         self.falacib = J.n(self.anuncia, falacib, foi=self.foi)
     def foi(self, _=0):
         self.cibele.entra(LIMBO)
-    def vai(self):
+    def vai(self, _=0):
         self.anuncia.vai()
         self.falacib.vai()
     def dica0(self, _=0):
