@@ -64,3 +64,10 @@ NameError: name 'output' is not defined
     super()(dono)
 AttributeError: object 'super' has no attribute '__call__'
 '''},
+{'date': 'Thu Jun 24 2021 10:18:09.620 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 22
+  " na estepe, aplanai uma vereda para o nosso Deus!)
+                                                     ^
+SyntaxError: EOL while scanning string literal
+'''},
