@@ -5,4 +5,5 @@ linkFairy = "https://thefairyprincess.net/wp-content/uploads/2020/03/1_rev-min-7
 # I love my forest!
 def Historia():
     cenaFloresta = Cena(img = linkFloresta)
+    cenaFloresta.vai()
 Historia()
