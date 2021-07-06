@@ -5,4 +5,5 @@ linkMulher = "data:image/webp;base64,UklGRrIOAABXRUJQVlA4IKYOAACwYwCdASp2AJABPsU
 # Hi! Today i'm doing a trail in this forest.
 def historia():
     cenaFloresta = Cena(img = linkFlorestasemnada)
+    cenaFloresta.vai()
 Historia()
