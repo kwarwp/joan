@@ -4,4 +4,5 @@ linkFloresta = "https://a-static.mlcdn.com.br/618x463/painel-de-festa-em-tecido-
 linkFairy = "https://thefairyprincess.net/wp-content/uploads/2020/03/1_rev-min-724x1024.png"
 # I love my forest!
 def Historia():
-    cenaFloresta = Cena(
+    cenaFloresta = Cena(img = linkFloresta)
+Historia()
