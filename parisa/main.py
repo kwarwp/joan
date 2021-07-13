@@ -8,5 +8,6 @@ def Historia():
     mulher = Elemento(img = linkMulher,
                     tit = "Lara",
                     style = dict(left=150, top=60, width=60, height=200))
+    mulher.entra(cenaFloresta)
     cenaFloresta.vai()
 Historia()
