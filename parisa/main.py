@@ -5,6 +5,8 @@ linkMulher = "data:image/webp;base64,UklGRrIOAABXRUJQVlA4IKYOAACwYwCdASp2AJABPsU
 # Hi! Today i'm doing a trail in this forest.
 def Historia():
     cenaFloresta = Cena(img = linkFlorestasemnada)
-    mulher = Elemto(img = linkMulher)
+    mulher = Elemento(img = linkMulher,
+                    tit = "Lara",
+                    style = dict(left=150, top=60, width=60, height=200))
     cenaFloresta.vai()
 Historia()
