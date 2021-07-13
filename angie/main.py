@@ -6,6 +6,7 @@ linkFairy = "https://thefairyprincess.net/wp-content/uploads/2020/03/1_rev-min-7
 def Historia():
     cenaFloresta = Cena(img = linkFloresta)
     fairy = Elemento(img = linkFairy,
-                     tit="Trixy")
+                     tit = "Trixy",
+                     style = dict(left))
     cenaFloresta.vai()
 Historia()
