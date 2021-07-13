@@ -7,6 +7,6 @@ def Historia():
     cenaFloresta = Cena(img = linkFloresta)
     fairy = Elemento(img = linkFairy,
                      tit = "Trixy",
-                     style = dict(left))
+                     style = dict(left=150, top=60, width=60, height=200))
     cenaFloresta.vai()
 Historia()
