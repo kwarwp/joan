@@ -9,5 +9,8 @@ def Historia():
                     tit = "Lara",
                     style = dict(left=150, top=150, width=70, height=200))
     mulher.entra(cenaFloresta)
+    txt1 = Texto(cenaFloresta,
+                 "Hi! Today I'm hiking in this forest.")
+    mulher.vai = txt1.vai              
     cenaFloresta.vai()
 Historia()
