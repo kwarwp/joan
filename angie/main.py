@@ -9,5 +9,8 @@ def Historia():
                      tit = "Trixy",
                      style = dict(left=150, top=150, width=60, height=100))
     fairy.entra(cenaFloresta)
+    txt1 = Texto(cenaFloresta,
+                 "I love my forest!")
+    txt1.vai = fairy.vai             
     cenaFloresta.vai()
 Historia()
