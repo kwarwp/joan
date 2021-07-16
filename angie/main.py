@@ -7,7 +7,7 @@ def Historia():
     cenaFloresta = Cena(img = linkFloresta)
     fairy = Elemento(img = linkFairy,
                      tit = "Trixy",
-                     style = dict(left=150, top=60, width=60, height=100))
+                     style = dict(left=150, top=150, width=60, height=100))
     fairy.entra(cenaFloresta)
     cenaFloresta.vai()
 Historia()
