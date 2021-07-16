@@ -11,6 +11,6 @@ def Historia():
     fairy.entra(cenaFloresta)
     txt1 = Texto(cenaFloresta,
                  "I love my forest!")
-    txt1.vai = fairy.vai             
+    fairy.vai = txt1.vai             
     cenaFloresta.vai()
 Historia()
