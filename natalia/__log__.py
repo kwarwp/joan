@@ -27,3 +27,10 @@ IndentationError: expected an indented block
              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Aug 11 2021 15:37:54.213 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  Historia(): 
+             ^
+SyntaxError: invalid syntax
+'''},
