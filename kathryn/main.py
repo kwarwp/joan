@@ -8,5 +8,5 @@ linkdodetetive: "https://www.alunira.com/IMG/arton77.png?1472829267"
 
 def Historia():
     cena1 = Cena(img = linkdofundo)
-    
-Historia():
+    cena1.vai()
+Historia()
