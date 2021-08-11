@@ -6,4 +6,5 @@ linkHanzo = "https://static.wikia.nocookie.net/naruto/images/d/d6/Hanz%C5%8D_%28
 # I need to practice to defeat Hanzõ! 
 def Historia(): 
     cenaAmegurake = Cena(img = linkAmegurake) 
+    cenaAmegurake.vai()
 Historia(): 
