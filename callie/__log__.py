@@ -20,3 +20,10 @@ SyntaxError: invalid syntax
                        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Aug 11 2021 15:46:34.785 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  stormCena=Cena(img=linkoftheoceanstorm)
+  ^
+IndentationError: expected an indented block
+'''},
