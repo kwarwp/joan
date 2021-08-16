@@ -98,3 +98,10 @@ IndentationError: unexpected indent
                                                                      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 16 2021 15:29:21.853 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 11
+  detetive = elemento (img = linkdodetetive,
+                                                                                                               ^
+SyntaxError: invalid syntax
+'''},
