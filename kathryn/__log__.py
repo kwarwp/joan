@@ -84,3 +84,10 @@ NameError: name 'elemento' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Aug 16 2021 15:28:01.342 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  tit = "Detetive"
+  ^
+IndentationError: unexpected indent
+'''},
