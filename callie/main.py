@@ -8,6 +8,6 @@ def Historia():
     mary=Elemento(img=linkoftheboatandthegirl,   
                  tit="Mary",
                  style=dict(left=150, top=60, width=60, height=200))
-    Mary.entra(stormCena)
+    mary.entra(stormCena)
     stormCena.vai()
 Historia()
