@@ -10,5 +10,6 @@ def Historia():
     nagato = Elemento (img=linkdoNagato,
                       tit="Nagato",
                       style=dict(left=150, top=60, width=60, height=200))
+    nagato.entra(cenaKonohagurake)
     cenaKonohagurake.vai()
     Historia() 
