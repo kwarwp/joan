@@ -13,4 +13,4 @@ def Historia():
     nagato.entra(cenaKonohagurake)
     cenaKonohagurake.vai()
     
-    Historia() 
+Historia() 
