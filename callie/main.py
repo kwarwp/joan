@@ -7,7 +7,7 @@ def Historia():
 #Mary is salling for a long time. At the morning, she was just on a trip, but she went too far, and now, 4:00pm, Mary is fighting agains a big storm.
     mary=Elemento(img=linkoftheboatandgirl,
                  tit="Mary",
-                 style=dict(left=150, top=60, width=60, height=100))
+                 style=dict(left=150, top=60, width=100, height=100))
     mary.entra(stormCena)
     stormCena.vai()
     
