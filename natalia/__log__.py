@@ -232,3 +232,10 @@ SyntaxError: EOL while scanning string literal
                                                                                                           ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 16 2021 17:16:27.761 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  txtNaruto = Texto(cenaKonohagurake,
+                                                                                                          ^
+SyntaxError: invalid syntax
+'''},
