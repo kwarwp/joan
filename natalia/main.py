@@ -6,5 +6,9 @@ linkHanzo = "http://images2.wikia.nocookie.net/__cb20120802150510/naruto/images/
 # I need to practice to defeat Hanzõ! 
 def Historia(): 
     cenaKonohagurake = Cena(img = linkKonohagurake) 
+    
+    nagato = Elemento (img=linkdoNagato,
+                      tit="Nagato",
+                      style=dict(left=150, top=60, width=60, height=200))
     cenaKonohagurake.vai()
-Historia() 
+    Historia() 
