@@ -106,3 +106,10 @@ TypeError: 'module' object is not callable
     cenaAmegurake = Cena(img = linkAmegurake) 
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Mon Aug 16 2021 15:36:25.319 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  nagato=Elemento(img=linkdoNagato,
+                                                                                                                              ^
+SyntaxError: invalid syntax
+'''},
