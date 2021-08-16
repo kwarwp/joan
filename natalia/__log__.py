@@ -218,3 +218,10 @@ SyntaxError: EOL while scanning string literal
                                                          ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Mon Aug 16 2021 17:15:52.743 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  "I must practice!
+                   ^
+SyntaxError: EOL while scanning string literal
+'''},
