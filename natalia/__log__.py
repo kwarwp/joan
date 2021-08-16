@@ -197,3 +197,10 @@ SyntaxError: invalid syntax
                                                                                                                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 16 2021 15:47:36.626 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  nagato = Elemento(img=linkDoNagato,
+                                                                                                                                  ^
+SyntaxError: invalid syntax
+'''},
