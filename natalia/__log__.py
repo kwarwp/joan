@@ -211,3 +211,10 @@ SyntaxError: invalid syntax
                                                          ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Mon Aug 16 2021 17:15:23.543 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  " I need to practice so I can defeat Sasuke, Datebbayo!
+                                                         ^
+SyntaxError: EOL while scanning string literal
+'''},
