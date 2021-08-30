@@ -9,7 +9,7 @@ linkdodetetive="https://www.alunira.com/IMG/arton77.png?1472829267"
 def Historia():
     cena1 = Cena(img = linkdofundo)
     detetive = Elemento(img=linkdodetetive,
-                       tit="Detetive"
+                       tit="Detetive",
                        style=dict(left=150, top=60, width=60, height=200))
     detetive.entra(cena1)
     txtdetetive= Testo (cena1,
