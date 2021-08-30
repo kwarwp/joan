@@ -10,7 +10,7 @@ def Historia():
     cena1 = Cena(img = linkdofundo)
     detetive = Elemento(img=linkdodetetive,
                        tit="Detetive",
-                       style=dict(left=150, top=60, width=60, height=100))
+                       style=dict(left=150, top=100, width=60, height=100))
     detetive.entra(cena1)
     cena1.vai()
     
