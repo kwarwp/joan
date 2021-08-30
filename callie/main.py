@@ -11,7 +11,7 @@ def Historia():
     mary.entra(stormCena)
     txtmary= Texto(stormcena,
                          "Mary is salling for a long time. At the morning, she was just on a trip, but she went too far, and now, 4:00pm, Mary is fighting agains a big storm.")
-    mary.vai = txtMary.vai
+    mary.vai = txtmary.vai
     stormCena.vai()
     
 Historia()
