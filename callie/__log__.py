@@ -88,3 +88,10 @@ NameError: name 'linkoftheboatandthegirl' is not defined
     mary=Elemento(img=linkoftheboatandthegirl,
 NameError: name 'linkoftheboatandthegirl' is not defined
 '''},
+{'date': 'Mon Aug 30 2021 15:50:10.540 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  'Mary is salling for a long time. At the morning, she was just on a trip, but she went too far, and now, 4:00pm, Mary is fighting agains a big storm.")
+                                                                                                                                                         ^
+SyntaxError: EOL while scanning string literal
+'''},
