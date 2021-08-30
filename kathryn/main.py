@@ -9,12 +9,12 @@ linkdodetetive="https://www.alunira.com/IMG/arton77.png?1472829267"
 def Historia():
     cena1 = Cena(img = linkdofundo)
     detetive = Elemento(img=linkdodetetive,
-                       tit="Detetive",
-                       style=dict(left=150, top=50, width=150, height=50))
+                       tit="Detetive"
+                       style=dict(left=150, top=60, width=60, height=200))
     detetive.entra(cena1)
-    txtdetetive = Texto(cena1,
-                         "Acaba de acontecer um roubo aqui no museu do Van Gogh!")
-    detetive.vai=txtdetetive                     
+    txtdetetive= Testo (cena1,
+                        "Acaba de acontecer um roubo aqui no museu do Van Gogh!")
+    detetive.vai=txtdetetive.vai                    
     cena1.vai()
     
 Historia()
