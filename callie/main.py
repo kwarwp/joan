@@ -9,6 +9,9 @@ def Historia():
                  tit="Mary",
                  style=dict(left=90, top=60, width=230, height=200))
     mary.entra(stormCena)
+    txtstartstorm= Texto(stormcena,
+                         'Mary is salling for a long time. At the morning, she was just on a trip, but she went too far, and now, 4:00pm, Mary is fighting agains a big storm.")
+    Mary.vai = txtmary.vai
     stormCena.vai()
     
 Historia()
