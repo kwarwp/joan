@@ -168,3 +168,10 @@ SyntaxError: invalid syntax
                                                                                                         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 30 2021 15:44:50.987 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  txtDetective = Texto(cena1,
+                                                                                                                     ^
+SyntaxError: invalid syntax
+'''},
