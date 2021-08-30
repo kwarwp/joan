@@ -13,7 +13,7 @@ def Historia():
                      style=dict(left=75, top=60, width=150, height=200))
     naruto.entra(cenaKonohagurake)
     txtNaruto = Texto(cenaKonohagurake,
-                      "I need to practice to defeat Hanzõ! "
+                      "I need to practice to defeat Hanzõ! ")
     naruto.vai = txtNaruto.vai
     cenaKonohagurake.vai()
     
