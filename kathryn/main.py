@@ -12,7 +12,7 @@ def Historia():
                        tit="Detetive",
                        style=dict(left=150, top=60, width=60, height=200))
     detetive.entra(cena1)
-    txtdetetive= Testo (cena1,
+    txtdetetive= Texto (cena1,
                         "Acaba de acontecer um roubo aqui no museu do Van Gogh!")
     detetive.vai=txtdetetive.vai                    
     cena1.vai()
