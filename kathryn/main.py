@@ -10,7 +10,7 @@ def Historia():
     cena1 = Cena(img = linkdofundo)
     detetive = Elemento(img=linkdodetetive,
                        tit="Detetive",
-                       style=dict(left=150, top=60, width=100, height=200))
+                       style=dict(left=150, top=60, width=150, height=200))
     detetive.entra(cena1)
     txtdetetive= Texto (cena1,
                         "Acaba de acontecer um roubo aqui no museu do Van Gogh!")
